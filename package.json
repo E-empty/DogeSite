@@ -1,0 +1,25 @@
+{
+  "name": "dogesite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.32.13"
+  },
+  "dependencies": {
+    "@dogstudio/highway": "^2.2.1",
+    "chart.js": "^2.9.4",
+    "coingecko-api": "^1.0.10",
+    "d3": "^6.7.0",
+    "gsap": "^3.6.1"
+  },
+  "type": "module",
+  "browserslist": [
+    "since 2017-06"
+  ]
+}

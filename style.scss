@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.nav-list{
+    height: 10vh;
+    display:flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.home,
+.about,
+.contact {
+    height: 90vh;
+    position: absolute;
+    width: 100%;
+}
+
+.home-content,
+.about-content,
+.contact-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    img{
+        height: 80%;
+    }
+}
+
+h1 {
+    font-size: 50px;
+    margin: 30px 0px;
+}
+
+p {
+    font-size: 20px;
+}
+
+
+.home {
+    background-image: linear-gradient(to top, #ff8c00 0%, #fff 100%);
+}
+
+.about {
+    background-image: linear-gradient(to top, #FC5C7D 0%, #fff 100%);
+}
+
+.contact {
+    background-image: linear-gradient(to top, #6A82FB 0%, #fff 100%);
+}
+
+.basic_info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.chartTypeButton button {
+    background-color: #ff8c00;
+    border: 1em #302e2e;
+    color: #fff;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+}
+
+.chartTypeButton button:not(:last-child) {
+    border-right: none;
+}
+
+.chartTypeButton:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.chartTypeButton button:hover {
+    background-color: #495455;
+}
+
+
+.chartRangeButton button {
+    background-color: #ff8c00;
+    border: 1em #302e2e;
+    color: #fff;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+}
+
+.chartRangeButton button:not(:last-child) {
+    border-right: none;
+}
+
+.chartRangeButton:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.chartRangeButton button:hover {
+    background-color: #495455;
+}

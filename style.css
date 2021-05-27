@@ -1,0 +1,15 @@
+
+
+.doge_background {
+    background: url("https://wallpaperaccess.com/full/3659198.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.doge-inner {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}

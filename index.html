@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.scss" />
+    <title>Dogo Page</title>
+</head>
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li><a class="nav-links" href="/">Home</a> </li>
+            <li><a class="nav-links" href="./about.html">About</a> </li>
+            <li><a class="nav-links" href="./contact.html">Contact</a> </li>
+        </ul>
+    </nav>
+
+    <main data-router-wrapper>
+        <section data-router-view="home" class="home">
+            <div class="home-content">
+                <div class="home-presentation">
+                    <h1>Doge</h1>
+                    <p>Doggo</p>
+                </div> 
+                <img src="./images/doge.png" alt="home">
+            </div>
+            <div class="basic_info">
+                <div class="doge_price">Doge price: $</div>
+                <div class="doge_market_cap">Doge market cap: </div>
+                <div class="doge_total_supply">Doge total volume: </div>
+            </div>
+            <div id="ChartType" class="chartTypeButton">
+                <p>Chart Type:</p>
+                <button id="Price">Price</button>
+                <button id="MarketCap">Market Cap</button>
+            </div>
+            <div id="ChartRange" class="chartRangeButton">
+                <p>Chart Range:</p>
+                <button id="TimeRangeLastDay" class="buttonRange">1D</button>
+                <button id="TimeRangeLastWeek" class="buttonRange">7D</button>
+                <button id="TimeRangeLastMonth" class="buttonRange">1M</button>
+                <button id="TimeRangeLastThreeMonths" class="buttonRange">3M</button>
+                <button id="TimeRangeLastYear" class="buttonRange">1Y</button>
+                <button id="TimeRangeMax" class="buttonRange">Max</button>
+            </div>
+            <canvas width="800" height="350" id="doge_chart"></canvas>
+        </section>
+    </main>
+    <script src="/js/index.js"></script>
+    <script src="/js/charts.js"></script>
+</body>
+</html>
